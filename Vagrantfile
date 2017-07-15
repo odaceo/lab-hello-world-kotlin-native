@@ -22,7 +22,4 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", privileged: false, 
     path: "https://github.com/odaceo/script-ubuntu-oraclejdk/raw/master/install.sh"
 
-  config.vm.provision "shell", privileged: false, 
-    path: "https://github.com/odaceo/script-ubuntu-gradle/raw/master/install.sh"
-
 end

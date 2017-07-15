@@ -25,7 +25,7 @@ cd /vagrant
 The compile command makes a dynamically linked executable.
 
 ``` shell
-gradle build
+./gradlew build
 ```
 
 ## Running the application

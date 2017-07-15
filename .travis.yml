@@ -17,7 +17,7 @@ cache:
     - $HOME/.gradle/wrapper/
 
 script: 
-  - gradle build
+  - ./gradlew build
 
 deploy:
   provider: bintray
