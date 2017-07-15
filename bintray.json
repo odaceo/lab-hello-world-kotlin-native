@@ -1,0 +1,38 @@
+{
+    "package": {
+        "name": "lab-hello-world-kotlin-native",
+        "repo": "generic",
+        "subject": "odaceo",
+        "desc": "A simple Kotlin Native application on Linux.",
+        "website_url": "https://github.com/odaceo/lab-hello-world-kotlin-native",
+        "issue_tracker_url": "https://github.com/odaceo/lab-hello-world-kotlin-native/issues",
+        "vcs_url": "https://github.com/odaceo/lab-hello-world-kotlin-native.git",
+        "licenses": ["Apache-2.0"],
+        "public_download_numbers": true,
+        "public_stats": true
+    },
+
+    "version": {
+        "name": "master",
+        "gpgSign": false
+    },
+
+    "files": [
+        {
+            "includePattern": "build/konan/bin/HelloWorldLinux.kexe", 
+            "uploadPattern": "/lab-hello-world-kotlin-native/master/linux-amd64-dynamic/hello",
+            "matrixParams": {
+                "override": 1
+            }
+        },
+        {
+            "includePattern": "build/konan/bin/HelloWorldMacbook.kexe", 
+            "uploadPattern": "/lab-hello-world-kotlin-native/master/darwin-amd64-dynamic/hello",
+            "matrixParams": {
+                "override": 1
+            }
+        }
+    ],
+
+    "publish": true
+}
